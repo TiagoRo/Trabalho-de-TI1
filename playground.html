@@ -57,8 +57,12 @@
             border: 1px dashed #dc3545;
         }
 
-        .alignContent { 
+        .alignContent{ 
             text-align: center;
+        }
+
+        .textBox{
+            color: white;
         }
     </style>
 </head>
@@ -146,7 +150,7 @@
                 </div>
                 <h4 class="alignContent">Encriptação César</h4>
 
-                <textarea id="textoNormal" class="form-control mb-2"
+                <textarea id="textoNormal" class="form-control mb-2 textBox"
                           placeholder="Mensagem normal"></textarea>
 
                 <button class="btn btn-success w-100 mb-2" onclick="encryptMensagem()">
