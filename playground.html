@@ -56,6 +56,10 @@
             border-radius: 6px;
             border: 1px dashed #dc3545;
         }
+
+        .alignContent { 
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -99,10 +103,10 @@
         <!-- RANSOMWARE -->
         <div class="col-md-4">
             <div class="custom-card play-card text-center">
-                <div class="icon-box text-danger">
+                <div class="icon-box text-danger alignContent">
                     <i class="bi bi-exclamation-triangle-fill"></i>
                 </div>
-                <h4>Ransomware (Simulação)</h4>
+                <h4 class="alignContent">Ransomware (Simulação)</h4>
                 <p class="text-secondary">
                     Simula um ataque visual de ransomware (sem causar danos).
                 </p>
@@ -115,11 +119,11 @@
         <!-- XSS -->
         <div class="col-md-4">
             <div class="custom-card play-card">
-                <div class="icon-box text-warning">
+                <div class="icon-box text-warning alignContent">
                     <i class="bi bi-code-slash"></i>
                 </div>
-                <h4>Teste de XSS</h4>
-                <p class="text-secondary">
+                <h4 class="alignContent">Teste de XSS</h4>
+                <p class="text-secondary alignContent">
                     Experimenta injetar HTML ou JS.
                 </p>
 
@@ -137,10 +141,10 @@
         <!-- ENCRIPTAÇÃO -->
         <div class="col-md-4">
             <div class="custom-card play-card">
-                <div class="icon-box text-success">
+                <div class="icon-box text-success alignContent">
                     <i class="bi bi-lock-fill"></i>
                 </div>
-                <h4>Encriptação César</h4>
+                <h4 class="alignContent">Encriptação César</h4>
 
                 <textarea id="textoNormal" class="form-control mb-2"
                           placeholder="Mensagem normal"></textarea>
@@ -176,7 +180,7 @@
 
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script rel="js" src="../js/playground.js"></script>
+<script rel="js" src="js/playground.js"></script>
 
 </body>
 </html>
