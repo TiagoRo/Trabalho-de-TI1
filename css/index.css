@@ -1,0 +1,116 @@
+/* Estilo para os botões de navegação do carrossel */
+.carousel-nav-cards {
+    position: static;
+    /* Faz com que saiam de cima da imagem */
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    /* Espaço entre os botões */
+    justify-content: center;
+}
+
+.carousel-nav-cards button {
+    flex: 1;
+    /* Faz com que todos tenham o mesmo tamanho */
+    width: auto !important;
+    /* Sobrescreve o padrão do bootstrap */
+    height: auto !important;
+    text-indent: 0 !important;
+    /* Permite mostrar texto */
+    opacity: 0.6;
+    background-color: #1e1e1e;
+    /* Cor escura do fundo */
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+/* Quando o botão está ativo */
+.carousel-nav-cards button.active {
+    opacity: 1;
+    background-color: var(--primary-neon);
+    /* Verde Neon */
+    color: black;
+    /* Texto preto para contraste */
+    font-weight: bold;
+    transform: translateY(-3px);
+    /* Efeito 3D */
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.2);
+}
+
+/* Setas mais para as extremidades do ecrã */
+#carouselNoticias .carousel-control-prev {
+    left: 10px;
+    z-index: 10;
+    /* empurra para a esquerda */
+}
+
+#carouselNoticias .carousel-control-next {
+    right: 10px;
+    z-index: 10;
+    /* empurra para a direita */
+}
+
+/* Garante que continuam centradas verticalmente */
+#carouselNoticias .carousel-control-prev,
+#carouselNoticias .carousel-control-next {
+    width: auto;
+}
+
+/* Indicadores mais para baixo */
+#carouselNoticias .carousel-indicators {
+    bottom: 5px;/* empurra para baixo */
+}
+
+/* SECTION COM VÍDEO DE FUNDO */
+.section-video-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Vídeo */
+.section-video-bg .bg-video {
+    position: absolute;
+    left: 50%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Overlay para escurecer o vídeo */
+.section-video-bg .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: rgba(0, 0, 0, 5);
+    z-index: 0;
+}
+
+/* Conteúdo à frente do vídeo */
+.section-video-bg .container {
+    position: relative;
+    z-index: 3;
+}
+
+.section-video-bg .bg-video {
+    filter: brightness(0.5) contrast(1.1);
+}
+
+.imagemNoticias{
+    margin: 50px 0 50px 0;
+}
+
+.containerBorder {
+    border: 1px solid rgba(0, 255, 136, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.15);
+    overflow: hidden;
+}

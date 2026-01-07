@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield - Conceitos de Cibersegurança</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/headerConceitos.jpg);
+            justify-content: center;
+            display: flex;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-shield-lock-fill"></i> CYBERSHIELD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="conceitos.html">Conceitos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="playground.html">Playground</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ferramenta.html">Ferramentas Interativas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero-section py-5 text-center" style="background-color: #111; color: #fff;">
+        <div class="container">
+            <span class="text-uppercase ls-2">Aprende os Conceitos Essenciais</span>
+            <h1 class="hero-title mt-2 mb-4">Fundamentos de Cibersegurança</h1>
+            <p class="lead mb-4 w-75 mx-auto">Domina os conceitos mais importantes para proteger sistemas, redes e
+                dados.</p>
+        </div>
+    </header>
+
+    <!-- Seção de Conceitos -->
+    <section id="conceitos" class="py-5">
+        <div class="container">
+
+            <!-- Categoria 1: Conceitos Básicos -->
+            <div class="categoria mb-5">
+                <h3 class="section-title text-center text-center mb-4">Conceitos Básicos</h3>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="custom-card text-center p-4 shadow-sm rounded">
+                            <div class="icon-box mb-3"><i class="bi bi-key-fill text-success"></i></div>
+                            <h4>Senha Forte</h4>
+                            <p class="text-secondary">A primeira linha de defesa. Deve ser longa, única e misturar
+                                letras, números e símbolos. Evite datas de nascimento.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="custom-card text-center p-4 shadow-sm rounded">
+                            <div class="icon-box mb-3"><i class="bi bi-shield-lock-fill text-primary"></i>
+                            </div>
+                            <h4>2FA (Autenticação de Dois Fatores)</h4>
+                            <p class="text-secondary"> Dupla segurança. Mesmo que descubram a sua senha, não entram sem
+                                o segundo código fornecido no seu telemóvel.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="custom-card text-center p-4 shadow-sm rounded">
+                            <div class="icon-box mb-3"><i class="bi bi-cloud-arrow-up-fill fs-1 text-info"></i></div>
+                            <h4>Backup</h4>
+                            <p class=" text-secondary">Cópias de segurança regulares garantem que recupera os seus
+                                    dados após ataques ou avarias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria 2: Ameaças Digitais -->
+                <div class="categoria mb-5">
+                    <h3 class="section-title text-center text-center mb-4">Ameaças Digitais</h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="custom-card text-center p-4 shadow-sm rounded">
+                                <div class="icon-box mb-3"><i class="bi bi-bug-fill text-danger"></i>
+                                </div>
+                                <h4>Malware</h4>
+                                <p class="text-secondary">O termo geral para "software malicioso". Qualquer programa
+                                    feito para danificar o sistema ou roubar dados.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="custom-card text-center p-4 shadow-sm rounded">
+                                <div class="icon-box mb-3"><i class="bi bi-lock-fill text-danger"></i>
+                                </div>
+                                <h4>Ransomware</h4>
+                                <p class="text-secondary">Criptografa os seus ficheiros e exige um pagamento (resgate)
+                                    para devolver o acesso.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="custom-card text-center p-4 shadow-sm rounded">
+                                <div class="icon-box mb-3"><i class="bi bi-envelope-exclamation-fill text-warning"></i></div>
+                                <h4>Phishing</h4>
+                                <p class="text-secondary"> E-mails ou links falsos que imitam empresas reais para o
+                                    enganar e roubar senhas ou dados bancários.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="custom-card text-center p-4 shadow-sm rounded">
+                                <div class="icon-box mb-3"><i class="bi bi-eye-fill text-primary"></i></div>
+                                <h4>Spyware</h4>
+                                <p class="text-secondary"> O espião silencioso. Esconde-se no dispositivo para
+                                    monitorizar a sua atividade e roubar informações pessoais.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="custom-card text-center p-4 shadow-sm rounded">
+                                <div class="icon-box mb-3"><i class="bi bi-display text-warning"></i></div>
+                                <h4>Adware</h4>
+                                <p class="text-secondary"> Publicidade intrusiva. Software que inunda o ecrã com
+                                    anúncios indesejados e pode rastrear a navegação.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="custom-card text-center p-4 shadow-sm rounded">
+                                <div class="icon-box mb-3"><i class="bi bi-person-lines-fill text-secondary"></i></div>
+                                <h4> Engenharia Social</h4>
+                                <p class="text-secondary"> Manipulação psicológica. O hacker engana a pessoa para que
+                                    ela entregue dados voluntariamente, explorando a confiança.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria 3: Rede e Internet -->
+                <div class="categoria mb-5">
+                    <h3 class="section-title text-center text-center mb-4">Rede e Internet</h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="custom-card text-center p-4 shadow-sm rounded">
+                                <div class="icon-box mb-3"><i class="bi bi-fire text-danger"></i></div>
+                                <h4>Firewall</h4>
+                                <p class="text-secondary">Monitoriza e bloqueia tráfego suspeito, impedindo acessos não
+                                    autorizados ao seu computador.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="custom-card text-center p-4 shadow-sm rounded">
+                                <div class="icon-box mb-3"><i class="bi bi-shield-shaded text-primary"></i></div>
+                                <h4>VPN</h4>
+                                <p class="text-secondary"> Encripta a conexão de internet, escondendo a localização e
+                                    dados de olhares curiosos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="custom-card text-center p-4 shadow-sm rounded">
+                                <div class="icon-box mb-3"><i class="bi bi-wifi text-success"></i></div>
+                                <h4>Wi-Fi Seguro</h4>
+                                <p class="text-secondary">Em cafés ou aeroportos, evite aceder ao banco, pois os dados
+                                    podem ser intersetados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Categoria 4: Privacidade -->
+                <div class="categoria mb-5">
+                    <h3 class="section-title text-center text-center mb-4">Privacidade</h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="custom-card text-center p-4 shadow-sm rounded">
+                                <div class="icon-box mb-3"><i class="bi bi-cookie text-secondary"></i></div>
+                                <h4> Cookies e Rastreamento</h4>
+                                <p class="text-secondary"> Ficheiros que guardam preferências, mas que também são usados para seguir os seus passos pela web. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="custom-card text-center p-4 shadow-sm rounded">
+                                <div class="icon-box mb-3"><i class="bi bi-geo-alt-fill text-warning"></i></div>
+                                <h4>Localização</h4>
+                                <p class="text-secondary"> Aplicações e serviços podem recolher a sua posição geográfica para publicidade, análise de hábitos ou personalização de conteúdos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="custom-card text-center p-4 shadow-sm rounded">
+                                <div class="icon-box mb-3"><i class="bi bi-incognito text-info"></i></div>
+                                <h4>Navegação Anónima</h4>
+                                <p class="text-secondary">O modo privado impede o registo do histórico e cookies no dispositivo, mas não garante anonimato total na internet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-secondary text-light">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 CyberShield. Desenvolvido para a aula de TI.</p>
+            <small>HTML5 • CSS3 • Bootstrap 5 • JS</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

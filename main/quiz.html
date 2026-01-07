@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield | Quiz</title>
+
+    <!-- Bootstrap + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/headerQuiz.png);
+            justify-content: center;
+            display: flex;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-shield-lock-fill"></i> CYBERSHIELD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="conceitos.html">Conceitos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="playground.html">Playground</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ferramenta.html">Ferramentas Interativas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <section class="hero-section">
+        <div>
+            <h1 class="hero-title">Testa os teus conhecimentos em Cibersegurança!</h1>
+            <p class="text-grey">Descobre o quão preparado estás contra ameaças digitais!</p>
+        </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="quiz-section">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <!-- QUIZ CARD -->
+                <div class="col-lg-8 mb-4">
+                    <div class="card quiz-card">
+
+                        <!-- SELEÇÃO DE TEMA -->
+                        <h3 class="section-title">Quiz</h3>
+                        
+                        <!-- SELEÇÃO DE TEMA -->
+                        <div id="theme-selection">
+                            <h4 class="mb-4">Escolhe o Tema do Quiz</h4>
+
+                            <div class="options-container">
+                                <button class="btn-theme" onclick="startQuiz('conceitos')">
+                                    Conceitos Básicos
+                                </button>
+
+                                <button class="btn-theme" onclick="startQuiz('ameacas')">
+                                    Malware & Vírus
+                                </button>
+
+                                <button class="btn-theme" onclick="startQuiz('internet')">
+                                    Palavras-passe & Autenticação
+                                </button>
+
+                                <button class="btn-theme" onclick="startQuiz('privacidade')">
+                                    Privacidade & Dados Pessoais
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- QUIZ (COMEÇA ESCONDIDO) -->
+                        <div id="quiz-content" style="display:none;">
+                            <div id="progress">
+                                Pergunta <span id="current-question-num">1</span> de
+                                <span id="total-questions">15</span>
+                            </div>
+
+                            <div id="question-text"></div>
+                            <div id="options-container" class="options-container"></div>
+
+                            <button id="next-btn" onclick="nextQuestion()">Próxima Pergunta</button>
+                        </div>
+
+                        <div id="quiz-content">
+
+                            <div id="question-text"></div>
+                            <div id="options-container" class="options-container"></div>
+
+                            <button id="next-btn" onclick="nextQuestion()">Próxima Pergunta</button>
+                        </div>
+
+                        <!-- RESULTADOS -->
+                        <div id="result-content" style="display:none;">
+                            <h2>Quiz Terminado 🎉</h2>
+                            <p class="score-display">
+                                Acertaste <span id="score">0</span> de <span id="total-score">10</span>
+                            </p>
+                            <p id="feedback-message"></p>
+                            <button class="btn btn-neon mt-3" onclick="restartQuiz()">Tentar Novamente</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ESTATÍSTICAS -->
+                <div class="col-lg-4">
+                    <div class="card stats-card">
+                        <h5>📊 Estatísticas</h5>
+                        <p>Corretas: <span id="stat-correct">0</span></p>
+                        <p>Erradas: <span id="stat-wrong">0</span></p>
+                        <p>Pontuação: <span id="stat-percent">0</span>%</p>
+                        <p>Tempo médio: <span id="stat-time">0</span>s</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 CyberShield</p>
+            <small class="text-secondary">HTML • CSS • Bootstrap • JavaScript</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/quiz.js"></script>
+</body>
+
+</html>
