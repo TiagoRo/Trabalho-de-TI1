@@ -64,6 +64,24 @@
         .textBox{
             color: white;
         }
+
+        /* Estilo para as caixa do XSS */
+        #inputXSS, 
+        #textoNormal, 
+        #textoEncriptado {
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #333;
+        }
+        /* Estilo específico para o texto de ajuda (placeholder) XSS */
+        #inputXSS::placeholder,
+        #textoNormal::placeholder,
+        #textoEncriptado::placeholder {
+            color: #ffffff !important;
+            opacity: 1;
+        }
+
+        
     </style>
 </head>
 
@@ -148,7 +166,7 @@
                 <div class="icon-box text-success alignContent">
                     <i class="bi bi-lock-fill"></i>
                 </div>
-                <h4 class="alignContent">Encriptação César</h4>
+                <h4 class="alignContent mb-4">Encriptação César</h4>
 
                 <textarea id="textoNormal" class="form-control mb-2 textBox"
                           placeholder="Mensagem normal"></textarea>

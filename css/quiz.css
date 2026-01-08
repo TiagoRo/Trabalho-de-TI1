@@ -14,7 +14,7 @@
 
 .quiz-card {
     width: 100%;
-    /* border: 1px solid #00ff99; */
+    border: 1px solid #00ff99;
 }
 
 #question-text {
@@ -60,6 +60,7 @@
     color: #721c24;
 }
 
+/* Escondido inicialmente */
 #next-btn {
     margin-top: 20px;
     padding: 10px 25px;
@@ -70,7 +71,6 @@
     font-size: 1rem;
     cursor: pointer;
     display: none;
-    /* Escondido inicialmente */
 }
 
 #next-btn:hover {
@@ -90,12 +90,12 @@
 
 .stats-card {
     background-color: #0b0b0b;
-    /* border: 1px solid #00ff99; */
+    border: 1px solid #00ff99;
     color: #ffffff;
     padding: 20px;
     border-radius: 15px;
     height: auto;
-    margin-left: 40px;/* afasta do quiz */
+    margin-left: 40px;
     margin-top: 40px;
 }
 

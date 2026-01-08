@@ -682,6 +682,8 @@ function selectAnswer(button, index) {
     buttons[correctIndex].classList.add("correct");
   }
 
+   updateStats();
+   
   document.getElementById("next-btn").style.display = "inline-block";
 }
 
@@ -721,4 +723,14 @@ function restartQuiz() {
   document.getElementById("result-content").style.display = "none";
   document.getElementById("quiz-content").style.display = "none";
   document.getElementById("theme-selection").style.display = "block";
+}
+
+
+function updateStats() {
+  document.getElementById("stat-correct").textContent = score;
+  document.getElementById("stat-wrong").textContent =
+    currentQuestion + 1 - score;
+
+  const percent = Math.round((score / (currentQuestion + 1)) * 100);
+  document.getElementById("stat-percent").textContent = percent;
 }

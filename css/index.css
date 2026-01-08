@@ -114,3 +114,9 @@
     box-shadow: 0 0 8px rgba(0, 255, 136, 0.15);
     overflow: hidden;
 }
+
+/* Para remover o sublinhado dos conceitos do index */
+#conceitos a {
+    text-decoration: none;
+    color: inherit; /* Mantém a cor original do texto */
+}
