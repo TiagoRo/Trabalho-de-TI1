@@ -6,21 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberShield - Segurança Ofensiva</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/quiz.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/quizAdvertsement.css">
-
-    <style>
-        .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagens/headerIndex.jpeg);
-            justify-content: center;
-            display: flex;
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
 </head>
 
 <body>
@@ -54,8 +43,7 @@
     </header>
 
     <!-- Conceitos -->
-    <section id="conceitos" class="conceitos">
-        <div class="container">
+    <section id="conceitos" class="conceitos container">
             <h2 class="section-title">Alguns conceitos </h2>
             <div class="row g-4">
                 <div class="col-md-4">
@@ -83,7 +71,6 @@
                     </div>
                 </a></div>
             </div>
-        </div>
     </section>
 
     <!-- Noticias -->
@@ -107,14 +94,14 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
                             <div class="row align-items-center">
-                                <div class="col-md-6 imagemNoticias"> <img src="imagens/vodafone.jpeg"
-                                        class="img-fluid rounded shadow-lg  w-100" alt="Backups">
+                                <div class="col-12 col-md-6 imagemNoticias order-2 order-md-1">
+                                    <img src="imagens/vodafone.jpeg" class="img-fluid rounded shadow-lg w-100" alt="Backups">
                                 </div>
-                                <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
+                                <div class="col-12 col-md-6 ps-md-5 mt-4 mt-md-0 order-1 order-md-2">
                                     <h3 class="mb-4 text-white">Ataque à Vodafone </h3>
                                     <ul class="list-unstyled">
                                         <li class="mb-3">
-                                            <h5 style="color:#DEE2E6">A operadora de telecomunicações liderada por Mário
+                                            <h5 class="text-light">A operadora de telecomunicações liderada por Mário
                                                 Vaz foi alvo de um ciberataque sem precedentes na noite de
                                                 segunda-feira, o qual afetou a sua rede e os seus quatro milhões de
                                                 clientes.</h5>
@@ -125,19 +112,18 @@
                         </div>
                         <div class="carousel-item" data-bs-interval="10000">
                             <div class="row align-items-center">
-                                <div class="col-md-6 imagemNoticias"> <img src="imagens/noticia1.jpg"
-                                        class="img-fluid rounded shadow-lg border border-secondary w-100"
-                                        alt="Segurança">
+                                <div class="col-12 col-md-6 imagemNoticias order-2 order-md-1">
+                                    <img src="imagens/noticia1.jpg" class="img-fluid rounded shadow-lg border border-secondary w-100" alt="Segurança">
                                 </div>
-                                <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
+                                <div class="col-12 col-md-6 ps-md-5 mt-4 mt-md-0 order-1 order-md-2">
                                     <h3 class="mb-4 text-light">Portugal reforça lei de cibersegurança e torna prevenção
                                         obrigatória</h3>
                                     <ul class="list-unstyled">
                                         <li class="mb-3">
-                                            <h5 style="color:#DEE2E6"> Portugal aprovou um novo enquadramento legal de
+                                            <h5 class="text-light">Portugal aprovou um novo enquadramento legal de
                                                 cibersegurança, alinhado com a Diretiva Europeia NIS2, que reforça a
                                                 proteção de sistemas digitais e torna obrigatória a adoção de medidas de
-                                                prevenção e gestão de risco. </h5>
+                                                prevenção e gestão de risco.</h5>
                                         </li>
                                     </ul>
                                 </div>
@@ -145,14 +131,14 @@
                         </div>
                         <div class="carousel-item" data-bs-interval="10000">
                             <div class="row align-items-center">
-                                <div class="col-md-6 imagemNoticias"> <img src="imagens/festival.jpeg"
-                                        class="img-fluid rounded shadow-lg border border-secondary w-100" alt="Updates">
+                                <div class="col-12 col-md-6 imagemNoticias order-2 order-md-1">
+                                    <img src="imagens/festival.jpeg" class="img-fluid rounded shadow-lg border border-secondary w-100" alt="Updates">
                                 </div>
-                                <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
+                                <div class="col-12 col-md-6 ps-md-5 mt-4 mt-md-0 order-1 order-md-2">
                                     <h3 class="mb-4 text-white">Época festiva obriga ao reforço da cibersegurança</h3>
                                     <ul class="list-unstyled">
                                         <li class="mb-3">
-                                            <h5 style="color:#DEE2E6">Durante a época que antecede o natal é usual as
+                                            <h5 class="text-light">Durante a época que antecede o natal é usual as
                                                 campanhas de descontos e grandes promoções, tanto no mundo real como no
                                                 digital. Mas é também neste período que muitas pessoas estão vulneráveis
                                                 a burlas informáticas</h5>
@@ -173,14 +159,15 @@
         </div>
     </section>
 
-    <!-- ADVERTISEMENT DO QUIZ -->
-    <h2 class="section-title mb-5">Quiz</h2>
-    <div class=" container quiz-advertisement  mx-auto containerBorder">
+    <!--QUIZ -->
+    <section class="quiz-section container">
+        <h2 class="section-title mb-5">Quiz</h2>
+        <div class="quiz-advertisement mx-auto containerBorder">
         <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="imagens/quizAdd.jpg" alt="Promoção Quiz" class="img-fluid rounded shadow-lg  w-100">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <img src="imagens/quizAdd.jpg" alt="Promoção Quiz" class="img-fluid rounded shadow-lg w-100">
             </div>
-            <div class="col-md-6 mt-4 mt-md-0 text-center text-md-start">
+            <div class="col-12 col-md-6 mt-4 mt-md-0 text-center text-md-start order-1 order-md-2">
                 <h3 class="text-light mb-3">Testa os teus conhecimentos em Cibersegurança!</h3>
                 <p class="text-secondary mb-4">
                     Escolhe entre 4 temas diferentes e responde a 15 perguntas.
@@ -190,19 +177,22 @@
             </div>
         </div>
     </div>
+    </section>
 
+    <script> const video = document.querySelector('.bg-video'); video.playbackRate = 0.5;</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
 
     <!-- Footer -->
     <footer>
         <div class="footer-container">
 
-            <!-- COLUNA 1: CYBERSHIELD -->
             <div class="footer-left">
                 <a class="navbar-brand" href="index.html">CYBERSHIELD</a>
                 <p>Protege os teus dados, fortalece a tua defesa digital e mantém-te informado sobre ciberameaças.</p>
             </div>
 
-            <!-- COLUNA 2: LINKS RÁPIDOS -->
             <div class="footer-right">
                 <h4>Links Rápidos</h4>
                 <p><a href="index.html">Início</a></p>
@@ -213,26 +203,24 @@
                 <p><a href="quiz.html">Quiz</a></p>
             </div>
 
-            <!-- COLUNA 3: ALUNOS -->
             <div class="footer-students">
                 <h4>Alunos</h4>
-                <p><a href="https://www.linkedin.com/in/aluno1" target="_blank"><i class="bi bi-linkedin"></i> Tiago
+                <p><a href="https://www.linkedin.com/in/tiago-rodrigues-151b87197/" target="_blank"><i class="bi bi-linkedin"></i> Tiago
                         Rodrigues</a></p>
-                <p><a href="https://www.linkedin.com/in/aluno2" target="_blank"><i class="bi bi-linkedin"></i> Flávio
+                <p><a href="https://www.linkedin.com/in/fl%C3%A1vio-assis-7847b1382/" target="_blank"><i class="bi bi-linkedin"></i> Flávio
                         Cândido</a></p>
-                <p><a href="https://www.linkedin.com/in/aluno3" target="_blank"><i class="bi bi-linkedin"></i> António
+                <p><a href="https://www.linkedin.com/in/ant%C3%B3nio-nunes/" target="_blank"><i class="bi bi-linkedin"></i> António
                         Nunes</a></p>
-                <p><a href="https://www.linkedin.com/in/aluno3" target="_blank"><i class="bi bi-linkedin"></i> Francisco
+                <p><a href="https://www.linkedin.com/in/francisco-andrade-87a37821a/" target="_blank"><i class="bi bi-linkedin"></i> Francisco
                         Andrade</a></p>
 
             </div>
 
-            <!-- COLUNA 4: ESCOLA -->
             <div class="footer-school">
                 <h4>Escola</h4>
-                <p>Instituto Superior de Tecnologias Avançadas de Lisboa</p>
+                <p><a href="https://www.istec.pt/" target="_blank">Instituto Superior de Tecnologias Avançadas de Lisboa</a></p>
                 <p>Licenciatura: Engenharia Informática</p>
-                <p><a href="https://www.istec.pt/" target="_blank">WebSite Escola</a></p>
+                <p>Dez 2025 / Jan 2026</p>
             </div>
 
         </div>
@@ -241,14 +229,5 @@
             &copy; 2026 CyberShield • Desenvolvido para a aula de TI • HTML5 • CSS3 • Bootstrap 5 • JS
         </div>
     </footer>
-
-
-
-    <script> const video = document.querySelector('.bg-video'); video.playbackRate = 0.5; // 1 = normal | 0.5 = metade da velocidade </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script rel="js" src="js/quiz.js"></script>
-</body>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
