@@ -28,6 +28,15 @@ function restaurarMain() {
 }
 
 // XSS
+
+function copiarExemplo() {
+    
+    const exemplo = document.getElementById("payloadExemplo").innerText;
+
+    document.getElementById("inputXSS").value = exemplo;
+}
+
+
 function testarXSS() {
     const textoUtilizador = document.getElementById("inputXSS").value;
     

@@ -17,6 +17,7 @@ body {
     background-color: rgba(18, 18, 18, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #333;
+    min-height: 70px; /* Ensure consistent navbar height */
 }
 
 .navbar-brand {
@@ -44,12 +45,38 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 70px; /* Push down below fixed navbar */
+    position: relative;
+    z-index: 10; /* Ensure hero section appears above footer */
 }
 
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
     text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+    position: relative;
+    z-index: 15; /* Ensure title appears above gradients */
+}
+
+/* Subtitle text styling */
+.hero-section .text-uppercase {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary-neon);
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1em;
+    position: relative;
+    z-index: 15; /* Ensure text appears above gradients */
+}
+
+/* Lead paragraph in hero section */
+.hero-section .lead {
+    position: relative;
+    z-index: 15; /* Ensure paragraph appears above gradients */
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .btn-neon {
@@ -71,6 +98,13 @@ body {
 .conceitos {
     margin-bottom: 2%;
     margin-top: 1%;
+    border-top: 1px solid #333;
+    padding-top: 80px;
+}
+
+.quiz-section {
+    border-top: 1px solid #333;
+    padding-top: 80px;
 }
 
 .section-title {
@@ -117,24 +151,28 @@ body {
     margin-bottom: 20px;
 }
 
-/* FOOTER MODERNO CYBERSHIELD */
 footer {
+    background: #0a0a0a; 
     background: linear-gradient(135deg, #0a0a0a, #121212);
     color: var(--text-grey);
-    padding: 50px 20px;
+    padding: 50px 20px 60px;
+    padding-bottom: 20px; 
     border-top: 1px solid #333;
     position: relative;
-    overflow: hidden;
+    z-index: 1000;
+    overflow: visible; 
 }
 
 footer::before {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: rgba(0, 255, 136, 0.05);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: radial-gradient(circle at top right, rgba(0, 255, 136, 0.08), transparent 70%);
+    pointer-events: none;
+    z-index: 1;
 }
 
 footer .footer-container {
@@ -143,6 +181,21 @@ footer .footer-container {
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
+    position: relative;
+    z-index: 1001;
+}
+
+/* Garante que a parte dos créditos (bottom) não fica colada ao fundo */
+footer .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #555;
+    border-top: 1px solid #222;
+    position: relative;
+    z-index: 1001;
+    width: 100%;
 }
 
 footer .footer-left,
@@ -150,7 +203,6 @@ footer .footer-right,
 footer .footer-students,
 footer .footer-school {
     flex: 1 1 220px;
-    /* largura mínima para cada coluna */
     margin: 15px 10px;
 }
 
@@ -169,40 +221,297 @@ footer a {
     text-decoration: none;
     font-size: 0.95rem;
     transition: color 0.3s;
+    /* Garante que o link é uma área clicável ativa */
+    position: relative;
+    z-index: 1002;
+    pointer-events: auto !important;
 }
 
 footer a:hover {
-    color: var(--primary-neon);
+    color: var(--primary-neon) !important;
+    text-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
 }
 
-/* Links rápidos */
-footer .footer-right a {
+/* Ajustes de layout para colunas */
+footer .footer-right a,
+footer .footer-students a,
+footer .footer-school a {
     display: block;
     margin-bottom: 8px;
     text-align: left;
 }
 
-/* Alunos (LinkedIn) */
-footer .footer-students a {
-    display: block;
-    margin-bottom: 8px;
-}
-
 footer .footer-students a i {
-    margin-right: 5px;
+    margin-right: 8px;
+    color: var(--primary-neon);
 }
 
-/* Escola */
-footer .footer-school p,
-footer .footer-school a {
-    display: block;
-    margin-bottom: 8px;
-}
-
-/* Créditos pequenos */
+/* Créditos finais */
 footer .footer-bottom {
     text-align: center;
     margin-top: 30px;
+    padding-top: 20px;
     font-size: 0.8rem;
     color: #555;
+    border-top: 1px solid #222;
+    position: relative;
+    z-index: 1001;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-section .text-uppercase {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+        position: relative;
+        z-index: 15;
+    }
+
+    .hero-section {
+        height: 40vh;
+        padding: 2rem 1rem 2rem 1rem;
+        margin-top: 70px; /* Push down below navbar on tablets */
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .custom-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .icon-box {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        margin-left: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Footer responsive */
+    footer .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-left,
+    footer .footer-right,
+    footer .footer-students,
+    footer .footer-school {
+        flex: 1 1 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    footer .footer-right a,
+    footer .footer-students a,
+    footer .footer-school a {
+        text-align: center;
+    }
+
+    /* Container adjustments */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Button adjustments */
+    .btn-neon {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-section .text-uppercase {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0.08em;
+        position: relative;
+        z-index: 15;
+    }
+
+    .hero-section {
+        height: 35vh;
+        padding: 1.5rem 1rem;
+        margin-top: 100px; /* Significantly push down below mobile navbar */
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .custom-card {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .icon-box {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .custom-card h4 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .custom-card p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .nav-link {
+        margin-left: 5px;
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
+    /* Video section adjustments */
+    .bg-video {
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .section-video-bg .container {
+        padding: 1rem;
+    }
+
+    /* Carousel adjustments */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Footer mobile */
+    footer {
+        padding: 30px 15px 40px;
+    }
+
+    footer .footer-container {
+        padding: 0;
+    }
+
+    footer h4 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    footer p,
+    footer a {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.75rem;
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+
+    /* Quiz advertisement section */
+    .quiz-advertisement .col-md-6 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .quiz-advertisement .col-md-6:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Container borders */
+    .containerBorder {
+        margin: 0 10px;
+        border-radius: 8px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-section .text-uppercase {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+        letter-spacing: 0.05em;
+        position: relative;
+        z-index: 15;
+    }
+
+
+    .hero-section {
+        height: 30vh;
+        margin-top: 120px; /* Significantly push down below extra small navbar */
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .custom-card {
+        padding: 12px;
+    }
+
+    .icon-box {
+        font-size: 1.5rem;
+    }
+
+    .btn-neon {
+        padding: 6px 16px;
+        font-size: 0.8rem;
+    }
+
+    /* Navigation adjustments */
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+        font-size: 1rem;
+    }
+
+    /* Ensure navbar has consistent height on mobile */
+    .navbar {
+        min-height: 70px;
+    }
+
+    /* Image adjustments */
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
 }

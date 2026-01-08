@@ -1,0 +1,139 @@
+/* Ransomware fake */
+#ecraRansomware {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #8b0000;
+    color: white;
+    z-index: 9999;
+    text-align: center;
+    padding-top: 15%;
+}
+
+#ecraRansomware h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#ecraRansomware p {
+    font-size: 1.2rem;
+}
+
+.trigger-invisivel {
+    cursor: default;
+    user-select: none;
+}
+
+.trigger-invisivel:active {
+    color: #ffc107;
+}
+
+.play-card textarea,
+.play-card input {
+    background: #0d1117;
+    color: #fff;
+    border: 1px solid #30363d;
+}
+
+.resultado-xss {
+    background: #0d1117;
+    min-height: 80px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px dashed #dc3545;
+}
+
+.alignContent{
+    text-align: center;
+}
+
+.textBox{
+    color: white;
+}
+
+/* Estilo para as caixa do XSS */
+#inputXSS,
+#textoNormal,
+#textoEncriptado {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+/* Estilo específico para o texto de ajuda (placeholder) XSS */
+#inputXSS::placeholder,
+#textoNormal::placeholder,
+        #textoEncriptado::placeholder {
+            color: grey !important;
+            opacity: 1;
+        }
+
+    /* Section separator */
+.playground-section {
+    border-top: 1px solid #333;
+    padding-top: 80px;
+}
+
+/* Responsive design for playground page */
+    @media (max-width: 768px) {
+        .play-card {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+        }
+
+        .play-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .play-card p {
+            font-size: 0.95rem;
+        }
+
+        .play-card input,
+        .play-card textarea {
+            margin-bottom: 0.5rem;
+        }
+
+        .resultado-xss {
+            min-height: 60px;
+            padding: 8px;
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .play-card {
+            padding: 1rem;
+        }
+
+        .play-card h4 {
+            font-size: 1.1rem;
+        }
+
+        .play-card p {
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Ransomware screen mobile */
+        #ecraRansomware {
+            padding-top: 20%;
+        }
+
+        #ecraRansomware h1 {
+            font-size: 2rem;
+        }
+
+        #ecraRansomware p {
+            font-size: 1rem;
+            padding: 0 1rem;
+        }
+    }
