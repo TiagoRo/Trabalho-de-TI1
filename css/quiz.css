@@ -1,12 +1,9 @@
 .card {
-    /* Fundo PRETO como pedido */
     background-color: #0000;
-    /* Texto BRANCO como pedido */
     color: #ffff;
     width: 90%;
     padding: 2.5rem;
     border-radius: 15px;
-    /* Borda subtil para não se misturar com o fundo da página */
     border: 1px solid #333;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -112,6 +109,7 @@
 .quiz-section {
     padding-top: 5%;
     padding-bottom: 5%;
+    border-top: 1px solid #333;
 }
 
 .btn-theme {
@@ -135,6 +133,120 @@
     margin-top: 20px;
 }
 
+/* Hero section styling for quiz page */
+
+/* Responsive design for quiz page */
+@media (max-width: 768px) {
+    .quiz-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .card {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    #question-text {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-option {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #next-btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .stats-card {
+        margin-left: 0;
+        margin-top: 2rem;
+        padding: 1.5rem;
+    }
+
+    .score-display {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #question-text {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .options-container {
+        gap: 8px;
+    }
+
+    .btn-option {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .btn-theme {
+        padding: 12px;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #theme-selection h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .stats-card {
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .stats-card h5 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .stats-card p {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .score-display {
+        font-size: 1.1rem;
+    }
+
+    /* Quiz result adjustments */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
 .btn-theme {
     width: 100%;
     padding: 15px;
@@ -154,4 +266,118 @@
 
 #theme-selection {
     margin-top: 20px;
+}
+
+/* Hero section styling for quiz page */
+
+/* Responsive design for quiz page */
+@media (max-width: 768px) {
+    .quiz-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .card {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    #question-text {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-option {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #next-btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .stats-card {
+        margin-left: 0;
+        margin-top: 2rem;
+        padding: 1.5rem;
+    }
+
+    .score-display {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #question-text {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .options-container {
+        gap: 8px;
+    }
+
+    .btn-option {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .btn-theme {
+        padding: 12px;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #theme-selection h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .stats-card {
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .stats-card h5 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .stats-card p {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .score-display {
+        font-size: 1.1rem;
+    }
+
+    /* Quiz result adjustments */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
 }

@@ -7,84 +7,9 @@
   <title>CyberShield | Ferramentas Interativas</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/main.css">
-
-  <style>
-    .hero-section {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagens/headerFerramentas.jpg);
-      justify-content: center;
-      display: flex;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .tool-section {
-      border-top: 1px solid #333;
-      padding: 80px 0;
-    }
-
-    .tool-wrapper {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .tool-title {
-      color: var(--primary-neon);
-      margin-bottom: 20px;
-    }
-
-    .tool-box {
-      background: #0d0d0d;
-      border: 1px solid #222;
-      padding: 30px;
-      border-radius: 12px;
-    }
-
-    .tool-box input,
-    .tool-box textarea {
-      background: #0f0f0f;
-      border: 1px solid #333;
-      color: white;
-    }
-
-    .tool-image {
-      width: 100%;
-      max-width: 420px;
-      opacity: 0.85;
-      filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.15));
-    }
-
-    @media (max-width: 768px) {
-      .tool-image {
-        margin-top: 30px;
-      }
-    }
-
-    /* Deixar o campo das ferramentas a branco */
-    
-    .tool-box .form-control {
-        background-color: #000000 !important;
-        color: #ffffff !important;
-        border: 1px solid #333 !important;
-    }
-
-    .tool-box .form-control::placeholder {
-        color: #bbbbbb !important; 
-        opacity: 1;
-    }
-
-    .form-check-input { 
-        background-color: #222;
-        border-color: #444;
-    }
-
-    .form-check-input:checked {
-        background-color: #0d6efd; 
-        border-color: #0d6efd;
-    }
-
-  </style>
+  <link rel="stylesheet" href="css/ferramentas.css">
 </head>
 
 <body>
@@ -101,24 +26,24 @@
                     <li class="nav-item"><a class="nav-link active" href="conceitos.html">Conceitos</a></li>
                     <li class="nav-item"><a class="nav-link" href="playground.html">Playground</a></li>
                     <li class="nav-item"><a class="nav-link" href="ferramenta.html">Ferramentas Interativas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
                     <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-  <!-- HEADER -->
-  <header class="hero-section">
-    <div class="container">
-      <h1 class="hero-title">Ferramentas Interativas</h1>
-      <p class="lead text-light">Explora conceitos de cibersegurança na prática</p>
-    </div>
+  <!-- Header -->
+  <header class="hero-section py-5 text-center" style="background-color: #111; color: #fff;">
+      <div class="container">
+          <span class="text-uppercase ls-2">Garante a tua segurança digital</span>
+          <h1 class="hero-title mt-2 mb-4">Ferramentas Interativas</h1>
+          <p class="lead mb-4 w-75 mx-auto">Explora conceitos de cibersegurança na prática.</p>
+      </div>
   </header>
 
   <!-- ================= ANÁLISE DE LINKS ================= -->
-  <section class="tool-section">
-    <div class="tool-wrapper">
+  <section class="tool-section container">
       <div class="row align-items-center">
 
         <div class="col-md-6">
@@ -144,12 +69,10 @@
         </div>
 
       </div>
-    </div>
   </section>
 
   <!-- ================= GERADOR PASSWORD ================= -->
-  <section class="tool-section">
-    <div class="tool-wrapper">
+  <section class="tool-section container">
       <div class="row align-items-center flex-md-row-reverse">
 
         <div class="col-md-6">
@@ -188,12 +111,10 @@
         </div>
 
       </div>
-    </div>
   </section>
 
   <!-- ================= VERIFICADOR PASSWORD ================= -->
-  <section class="tool-section">
-    <div class="tool-wrapper">
+  <section class="tool-section container">
       <div class="row align-items-center">
 
         <div class="col-md-6">
@@ -217,19 +138,58 @@
         </div>
 
       </div>
-    </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <p class="mb-0">&copy; 2026 CyberShield — Ferramentas Educacionais</p>
-    </div>
-  </footer>
-
   <!-- ================= JS (INALTERADO) ================= -->
-  <script rel="js" src="js/ferramentas.js"></script>
+  <script src="js/ferramentas.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <a class="navbar-brand" href="index.html">CYBERSHIELD</a>
+                <p>Protege os teus dados, fortalece a tua defesa digital e mantém-te informado sobre ciberameaças.</p>
+            </div>
+
+            <div class="footer-right">
+                <h4>Links Rápidos</h4>
+                <p><a href="index.html">Início</a></p>
+                <p><a href="conceitos.html">Conceitos</a></p>
+                <p><a href="playground.html">Playground</a></p>
+                <p><a href="ferramenta.html">Ferramentas</a></p>
+                <p><a href="noticias.html">Notícias</a></p>
+                <p><a href="quiz.html">Quiz</a></p>
+            </div>
+
+            <div class="footer-students">
+                <h4>Alunos</h4>
+                <p><a href="https://www.linkedin.com/in/tiago-rodrigues-151b87197/" target="_blank"><i class="bi bi-linkedin"></i> Tiago
+                        Rodrigues</a></p>
+                <p><a href="https://www.linkedin.com/in/fl%C3%A1vio-assis-7847b1382/" target="_blank"><i class="bi bi-linkedin"></i> Flávio
+                        Cândido</a></p>
+                <p><a href="https://www.linkedin.com/in/ant%C3%B3nio-nunes/" target="_blank"><i class="bi bi-linkedin"></i> António
+                        Nunes</a></p>
+                <p><a href="https://www.linkedin.com/in/francisco-andrade-87a37821a/" target="_blank"><i class="bi bi-linkedin"></i> Francisco
+                        Andrade</a></p>
+
+            </div>
+
+            <div class="footer-school">
+                <h4>Escola</h4>
+                <p><a href="https://www.istec.pt/" target="_blank">Instituto Superior de Tecnologias Avançadas de Lisboa</a></p>
+                <p>Licenciatura: Engenharia Informática</p>
+                <p>Dez 2025 / Jan 2026</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 CyberShield • Desenvolvido para a aula de TI • HTML5 • CSS3 • Bootstrap 5 • JS
+        </div>
+    </footer>
 
 </html>

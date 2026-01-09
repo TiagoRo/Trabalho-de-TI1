@@ -68,7 +68,7 @@
 /* SECTION COM VÍDEO DE FUNDO */
 .section-video-bg {
     position: relative;
-    overflow: hidden;
+    z-index: 3;
 }
 
 /* Vídeo */
@@ -88,10 +88,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 5);
-    z-index: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 2;
 }
 
 /* Conteúdo à frente do vídeo */
@@ -119,4 +119,131 @@
 #conceitos a {
     text-decoration: none;
     color: inherit; /* Mantém a cor original do texto */
+}
+
+/* Quiz Advertisement Styles */
+.quiz-advertisement {
+    background-color: #05060B; /* fundo escuro consistente */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.quiz-advertisement h3 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.quiz-advertisement p {
+    color: #cccccc;
+    font-size: 1rem;
+}
+
+.btn-quiz-advert {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.btn-quiz-advert:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+/* Responsive adjustments for index page */
+@media (max-width: 768px) {
+    /* Carousel navigation cards */
+    .carousel-nav-cards {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .carousel-nav-cards button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Video section */
+    .section-video-bg {
+        padding: 2rem 0;
+    }
+
+    .bg-video {
+        height: 50vh;
+    }
+
+    /* News carousel content */
+    .carousel-item .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel-item .col-md-6 {
+        margin-bottom: 2rem;
+    }
+
+    .carousel-item .col-md-6:last-child {
+        margin-bottom: 0;
+    }
+
+    .imagemNoticias {
+        margin: 0 0 2rem 0;
+    }
+
+    /* News text styling */
+    .carousel-item h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .carousel-item h5 {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Further mobile optimizations */
+    .carousel-nav-cards button {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .bg-video {
+        height: 40vh;
+    }
+
+    .carousel-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-item h5 {
+        font-size: 0.95rem;
+    }
+
+    /* Container spacing */
+    .containerBorder {
+        padding: 1rem;
+    }
+
+    /* Quiz advertisement */
+    .quiz-advertisement {
+        padding: 2rem 1rem;
+    }
+
+    .quiz-advertisement h3 {
+        font-size: 1.3rem;
+    }
+
+    .quiz-advertisement p {
+        font-size: 0.95rem;
+    }
 }
