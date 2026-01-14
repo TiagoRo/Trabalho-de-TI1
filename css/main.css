@@ -17,7 +17,8 @@ body {
     background-color: rgba(18, 18, 18, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #333;
-    min-height: 70px; /* Ensure consistent navbar height */
+    min-height: 70px;
+    /* Ensure consistent navbar height */
 }
 
 .navbar-brand {
@@ -45,9 +46,11 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 70px; /* Push down below fixed navbar */
+    margin-top: 70px;
+    /* Push down below fixed navbar */
     position: relative;
-    z-index: 10; /* Ensure hero section appears above footer */
+    z-index: 10;
+    /* Ensure hero section appears above footer */
 }
 
 .hero-title {
@@ -55,7 +58,8 @@ body {
     font-weight: 700;
     text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
     position: relative;
-    z-index: 15; /* Ensure title appears above gradients */
+    z-index: 15;
+    /* Ensure title appears above gradients */
 }
 
 /* Subtitle text styling */
@@ -68,13 +72,15 @@ body {
     margin-bottom: 0.5rem;
     letter-spacing: 0.1em;
     position: relative;
-    z-index: 15; /* Ensure text appears above gradients */
+    z-index: 15;
+    /* Ensure text appears above gradients */
 }
 
 /* Lead paragraph in hero section */
 .hero-section .lead {
     position: relative;
-    z-index: 15; /* Ensure paragraph appears above gradients */
+    z-index: 15;
+    /* Ensure paragraph appears above gradients */
     color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -98,8 +104,6 @@ body {
 .conceitos {
     margin-bottom: 2%;
     margin-top: 1%;
-    border-top: 1px solid #333;
-    padding-top: 80px;
 }
 
 .quiz-section {
@@ -126,12 +130,12 @@ body {
 }
 
 .section-title::after {
-        width: 70px;
+    width: 70px;
 }
 
 /* CARDS ESTILIZADOS */
 .custom-card {
-    background-color: var(--card-bg);
+    background-color: #131313;
     border: none;
     border-radius: 10px;
     padding: 30px;
@@ -152,15 +156,15 @@ body {
 }
 
 footer {
-    background: #0a0a0a; 
+    background: #0a0a0a;
     background: linear-gradient(135deg, #0a0a0a, #121212);
     color: var(--text-grey);
     padding: 50px 20px 60px;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
     border-top: 1px solid #333;
     position: relative;
     z-index: 1000;
-    overflow: visible; 
+    overflow: visible;
 }
 
 footer::before {
@@ -169,7 +173,7 @@ footer::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     background: radial-gradient(circle at top right, rgba(0, 255, 136, 0.08), transparent 70%);
     pointer-events: none;
     z-index: 1;
@@ -277,7 +281,8 @@ footer .footer-bottom {
     .hero-section {
         height: 40vh;
         padding: 2rem 1rem 2rem 1rem;
-        margin-top: 70px; /* Push down below navbar on tablets */
+        margin-top: 70px;
+        /* Push down below navbar on tablets */
     }
 
     .section-title {
@@ -357,7 +362,8 @@ footer .footer-bottom {
     .hero-section {
         height: 35vh;
         padding: 1.5rem 1rem;
-        margin-top: 100px; /* Significantly push down below mobile navbar */
+        margin-top: 100px;
+        /* Significantly push down below mobile navbar */
     }
 
     .section-title {
@@ -478,7 +484,8 @@ footer .footer-bottom {
 
     .hero-section {
         height: 30vh;
-        margin-top: 120px; /* Significantly push down below extra small navbar */
+        margin-top: 120px;
+        /* Significantly push down below extra small navbar */
     }
 
     .section-title {
@@ -514,4 +521,26 @@ footer .footer-bottom {
         max-width: 100%;
         height: auto;
     }
+}
+
+/* Fundo VANTA */
+#vanta-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Garante que o conteúdo fica acima do fundo */
+body {
+    background: transparent;
+}
+
+.headerLine {
+    display: block;
+    width: 80%;
+    border-width: 2px;
+    color: lightgray;
 }
