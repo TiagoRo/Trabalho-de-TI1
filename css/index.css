@@ -208,6 +208,37 @@
         font-size: 1rem;
         line-height: 1.5;
     }
+
+    #carouselNoticias .carousel-control-prev,
+    #carouselNoticias .carousel-control-next {
+        display: none;
+    }
+
+    #dicas h3 {
+        font-size: 1.5rem;
+    }
+
+    #dicas h5 {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .containerBorder {
+    overflow: hidden; 
+    padding: 0 !important; 
+    background-color: transparent; 
+}
+}
+
+@media (max-width: 1200px) {
+    #carouselNoticias h3 {
+            font-size: 1.4rem;
+        }
+
+    #carouselNoticias h5 {
+            font-size: 0.95rem;
+            line-height: 1.4;
+    }
 }
 
 @media (max-width: 576px) {

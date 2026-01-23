@@ -33,13 +33,15 @@
     filter: drop-shadow(0 0 15px rgba(0, 255, 136, 0.15));
 }
 
+#separation{
+    width: 50%;
+}
+
 @media (max-width: 768px) {
     .tool-image {
         margin-top: 30px;
     }
 }
-
-/* Deixar o campo das ferramentas a branco */
 
 .tool-box .form-control {
     background-color: #000000 !important;
