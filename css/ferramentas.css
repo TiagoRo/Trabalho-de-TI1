@@ -63,7 +63,7 @@
     border-color: #0d6efd;
 }
 
-/* Responsive design for ferramentas page */
+/* Design responsivo para pagina ferramentas */
 @media (max-width: 768px) {
     .tool-section {
         padding: 60px 0;
@@ -111,7 +111,6 @@
         margin-top: 20px;
     }
 
-    /* Form adjustments */
     .form-check {
         margin-bottom: 0.5rem;
     }

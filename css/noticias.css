@@ -1,4 +1,4 @@
-/* Section separator */
+/* Separador Noticias */
 .noticias-section {
     border-top: 1px solid #333;
     padding-top: 80px;
@@ -81,11 +81,11 @@ footer {
 @media (max-width: 768px) {
     .news-item {
         flex-direction: column;
-        max-height: none; /* Allow full content to show */
+        max-height: none; /* Permitir ver conteudo completo */
     }
 
     .news-item.expanded {
-        max-height: none; /* Allow full expanded content to show */
+        max-height: none; /* Permitir ver conteudo completo expandido */
     }
 
     .news-item img {
@@ -93,7 +93,6 @@ footer {
         height: 200px;
     }
 
-    /* Ensure all text elements are visible */
     .news-meta,
     .news-item h4,
     .news-item p,
@@ -133,7 +132,6 @@ footer {
             color: white;
         }
 
-    /* Additional responsive improvements for noticias page */
     @media (max-width: 480px) {
         .news-list {
             padding: 0 0.5rem;
@@ -141,7 +139,7 @@ footer {
 
         .news-item {
             padding: 20px 0;
-            max-height: none; /* Ensure full content is visible */
+            max-height: none; 
         }
 
         .news-meta {
@@ -170,12 +168,11 @@ footer {
             margin-top: 8px;
         }
 
-        /* Ensure all text elements remain visible on mobile */
         .news-item .detalhe {
-            display: none; /* Hide detailed content initially */
+            display: none; 
         }
 
         .news-item.expanded .detalhe {
-            display: block; /* Show when expanded */
+            display: block; 
         }
     }

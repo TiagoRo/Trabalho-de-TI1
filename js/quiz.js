@@ -1,6 +1,4 @@
-/***********************
- * DADOS DOS QUIZZES
- ***********************/
+// Quiz
 const quizzes = {
   conceitos: [
     {
@@ -615,16 +613,12 @@ const quizzes = {
   ]
 };
 
-/***********************
- * VARIÁVEIS
- ***********************/
+/** VARIÁVEIS **/
 let currentQuiz = [];
 let currentQuestion = 0;
 let score = 0;
 
-/***********************
- * INICIAR QUIZ
- ***********************/
+/** INICIAR QUIZ **/
 function startQuiz(theme) {
   currentQuiz = quizzes[theme];
   currentQuestion = 0;
@@ -640,9 +634,7 @@ function startQuiz(theme) {
   loadQuestion();
 }
 
-/***********************
- * CARREGAR PERGUNTA
- ***********************/
+/** CARREGAR PERGUNTA **/
 function loadQuestion() {
   const q = currentQuiz[currentQuestion];
 
@@ -665,9 +657,7 @@ function loadQuestion() {
   document.getElementById("next-btn").style.display = "none";
 }
 
-/***********************
- * SELECIONAR RESPOSTA
- ***********************/
+/** SELECIONAR RESPOSTA **/
 function selectAnswer(button, index) {
   const correctIndex = currentQuiz[currentQuestion].correct;
   const buttons = document.querySelectorAll(".btn-option");
@@ -687,9 +677,7 @@ function selectAnswer(button, index) {
   document.getElementById("next-btn").style.display = "inline-block";
 }
 
-/***********************
- * PRÓXIMA PERGUNTA
- ***********************/
+/** PRÓXIMA PERGUNTA **/
 function nextQuestion() {
   currentQuestion++;
 
@@ -700,9 +688,7 @@ function nextQuestion() {
   }
 }
 
-/***********************
- * RESULTADOS
- ***********************/
+/** RESULTADOS **/
 function showResults() {
   document.getElementById("quiz-content").style.display = "none";
   document.getElementById("result-content").style.display = "block";
@@ -714,17 +700,15 @@ function showResults() {
 
   const percent = Math.round((score / currentQuiz.length) * 100);
   document.getElementById("stat-percent").textContent = percent;
+  document.getElementById("stat-percent-end").textContent = percent;
 }
 
-/***********************
- * REINICIAR
- ***********************/
+/** REINICIAR **/
 function restartQuiz() {
   document.getElementById("result-content").style.display = "none";
   document.getElementById("quiz-content").style.display = "none";
   document.getElementById("theme-selection").style.display = "block";
 }
-
 
 function updateStats() {
   document.getElementById("stat-correct").textContent = score;

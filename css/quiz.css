@@ -40,30 +40,30 @@
 }
 
 .btn-option:hover:not(:disabled) {
-    border-color: #3498db;
+    border-color: #00ff99;
     transform: translateY(2px); 
 }
 
 /* Estilos para Resposta Correta/Errada */
 .btn-option.correct {
-    background-color: #d4edda;
-    border-color: #28a745;
-    color: #155724;
+    background-color: #2f964a;
+    /* border-color: #28a745; */
+    color: white;
 }
 
 .btn-option.wrong {
-    background-color: #f8d7da;
-    border-color: #dc3545;
-    color: #721c24;
+    background-color: #dc3545;
+    /* border-color: #dc3545; */
+    color: white;
 }
 
 /* Escondido inicialmente */
 #next-btn {
     margin-top: 20px;
     padding: 10px 25px;
-    background-color: #3498db;
+    border-color: #00ff99;
+    background-color: #121212;
     color: white;
-    border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
@@ -71,7 +71,7 @@
 }
 
 #next-btn:hover {
-    background-color: #2980b9;
+    background-color: #303538;
 }
 
 .score-display {
@@ -118,24 +118,24 @@
     font-size: 1.1rem;
     background-color: #111;
     color: #fff;
-    border: 2px solid #3498db;
+    border: 2px solid gray;
     border-radius: 10px;
     transition: all 0.2s ease;
 }
 
 .btn-theme:hover {
-    background-color: #3498db;
+    background-color: #303538;
     color: #fff;
     transform: scale(1.02);
+    border-color: #00ff99;
 }
 
 #theme-selection {
     margin-top: 20px;
 }
 
-/* Hero section styling for quiz page */
-
-/* Responsive design for quiz page */
+/* ==================== Design responsivo para pagina Quiz ==================== */
+/* Media 768px */
 @media (max-width: 768px) {
     .quiz-section {
         padding-top: 3rem;
@@ -179,6 +179,7 @@
     }
 }
 
+/* Media 576px */
 @media (max-width: 576px) {
     .card {
         width: 100%;
@@ -236,7 +237,6 @@
         font-size: 1.1rem;
     }
 
-    /* Quiz result adjustments */
     h2 {
         font-size: 1.5rem;
     }
@@ -247,73 +247,7 @@
     }
 }
 
-.btn-theme {
-    width: 100%;
-    padding: 15px;
-    font-size: 1.1rem;
-    background-color: #111;
-    color: #fff;
-    border: 2px solid #3498db;
-    border-radius: 10px;
-    transition: all 0.2s ease;
-}
-
-.btn-theme:hover {
-    background-color: #3498db;
-    color: #fff;
-    transform: scale(1.02);
-}
-
-#theme-selection {
-    margin-top: 20px;
-}
-
-/* Hero section styling for quiz page */
-
-/* Responsive design for quiz page */
-@media (max-width: 768px) {
-    .quiz-section {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-
-    .card {
-        width: 95%;
-        padding: 1.5rem;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 2rem;
-    }
-
-    #question-text {
-        font-size: 1.1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .btn-option {
-        padding: 10px 15px;
-        font-size: 0.95rem;
-        margin-bottom: 0.5rem;
-    }
-
-    #next-btn {
-        padding: 8px 20px;
-        font-size: 0.9rem;
-    }
-
-    .stats-card {
-        margin-left: 0;
-        margin-top: 2rem;
-        padding: 1.5rem;
-    }
-
-    .score-display {
-        font-size: 1.2rem;
-    }
-}
-
+/* Media 576px */
 @media (max-width: 576px) {
     .card {
         width: 100%;
@@ -371,7 +305,6 @@
         font-size: 1.1rem;
     }
 
-    /* Quiz result adjustments */
     h2 {
         font-size: 1.5rem;
     }

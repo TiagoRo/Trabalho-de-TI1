@@ -1,11 +1,10 @@
-/* Section separator */
+/* Separador Conceitos */
 #conceitos {
     padding-top: 80px;
 }
 
-/* Responsive design for conceitos page */
+/* Design responsivo para pagina conceitos */
 @media (max-width: 768px) {
-    /* Card adjustments */
     .custom-card {
         margin-bottom: 1.5rem;
     }
@@ -17,7 +16,6 @@
 }
 
 @media (max-width: 576px) {
-    /* Further mobile optimizations */
     .custom-card {
         padding: 1rem;
         margin-bottom: 1rem;
@@ -32,12 +30,10 @@
         font-size: 0.9rem;
     }
 
-    /* Scroll margin adjustments for mobile */
     h3[id] {
         scroll-margin-top: 120px;
     }
 
-    /* Category spacing */
     .categoria {
         margin-bottom: 3rem;
     }

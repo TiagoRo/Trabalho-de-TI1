@@ -1,3 +1,4 @@
+// Background animado site -- Vanta
 VANTA.NET({
     el: "#vanta-bg",
     mouseControls: true,

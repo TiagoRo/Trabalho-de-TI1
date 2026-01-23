@@ -65,10 +65,12 @@
     bottom: 5px;/* empurra para baixo */
 }
 
-/* SECTION COM VÍDEO DE FUNDO */
+/* Section com video de fundo */
 .section-video-bg {
     position: relative;
     z-index: 3;
+    width: 80%;
+    margin: auto;
 }
 
 /* Vídeo */
@@ -121,9 +123,9 @@
     color: inherit; /* Mantém a cor original do texto */
 }
 
-/* Quiz Advertisement Styles */
+/* Anuncio Quiz Styke */
 .quiz-advertisement {
-    background-color: #05060B; /* fundo escuro consistente */
+    background-color: #05060B;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     padding: 2rem;
@@ -157,9 +159,8 @@
     text-decoration: none;
 }
 
-/* Responsive adjustments for index page */
+/* Design responsivo para pagina Index */
 @media (max-width: 768px) {
-    /* Carousel navigation cards */
     .carousel-nav-cards {
         flex-direction: column;
         gap: 10px;
@@ -180,7 +181,7 @@
         height: 50vh;
     }
 
-    /* News carousel content */
+    /* Conteudo Carousel Noticias */
     .carousel-item .row {
         flex-direction: column;
         text-align: center;
@@ -198,7 +199,6 @@
         margin: 0 0 2rem 0;
     }
 
-    /* News text styling */
     .carousel-item h3 {
         font-size: 1.3rem;
         margin-bottom: 1rem;
@@ -211,7 +211,6 @@
 }
 
 @media (max-width: 576px) {
-    /* Further mobile optimizations */
     .carousel-nav-cards button {
         padding: 10px;
         font-size: 0.8rem;
@@ -229,12 +228,11 @@
         font-size: 0.95rem;
     }
 
-    /* Container spacing */
     .containerBorder {
         padding: 1rem;
     }
 
-    /* Quiz advertisement */
+    /* Anuncio Quiz */
     .quiz-advertisement {
         padding: 2rem 1rem;
     }
