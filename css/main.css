@@ -508,6 +508,10 @@ footer .footer-bottom {
     }
 }
 
+.section-video-bg .container {
+    padding-top: 0;
+}
+
 /* Fundo VANTA */
 #vanta-bg {
     position: fixed;
